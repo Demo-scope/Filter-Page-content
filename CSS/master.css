@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Tahoma, sans-serif;
+}
+
+
+.one {
+    margin-bottom: 50px;
+}
+
+.one .switcher {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+.one .switcher li {
+    padding: 10px 25px;
+    background-color: #eeedef;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.one .switcher li:hover {
+    color: white;
+    background-color: rebeccapurple;
+}
+.one .switcher li.active {
+    color: white;
+    background-color: rebeccapurple;
+}
+
+.one .contaner {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+}
+.one .contaner i{
+    flex-basis: calc(19% - 1px);
+    text-align: center;
+    margin: 0 0.5% 5px;
+    font-size: 80px;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+.one .contaner i.web {
+    background-color: rgb(37, 116, 116);
+}
+.one .contaner i.sails {
+    background-color: rgb(37 73 116);
+}
+.one .contaner i.markting {
+    background-color: rgb(37 89 116);
+}
+
+.two {
+    background-color: black;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.two .all{
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+}
+.two .all .title{
+    font-weight: bold;
+    padding: 15px;
+    text-align: left;
+}
+.two .all ul{
+    display: flex;
+    padding-left: 0;
+    margin-left: 20px;
+    margin-top: 0;
+    margin-bottom: -1px;
+}
+.two .all ul li{
+    list-style: none;
+    background-color: #f4f4f4;
+    color: #a9a8ad;
+    padding: 13px 30px;
+    border: 1px solid #dfdcdc;
+    cursor: pointer;
+    font-weight: bold;
+    user-select: none;
+    transition: 0.1s;
+}
+.two .all ul li.active {
+    background-color: white;
+    border-bottom: none;
+    color: #009688;
+    border-top: 2px solid #4caf50;
+}
+.two .all .content {
+    border: 1px solid #dfdcdc;
+    margin: 0 20px 30px;
+    padding: 15px 20px;
+    text-align: left;
+}
+.two .all .content div:not(:first-child) {
+    display: none;
+}
